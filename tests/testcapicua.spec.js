@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
 
 test('test', async ({ page }) => {
 
-  await page.locator('input[id="firstName"]').fill('oscar2');
+  await page.locator('input[id="firstName"]').fill('oscar');
   await page.locator('input[id="lastName"]').fill('rico');
   await page.getByPlaceholder('Mobile Number').fill('3219145165454')
   await page.getByText('Male', { exact: true }).click();
